@@ -1,7 +1,10 @@
 from robodk import *
 from robolink import *
-from Init import init
 import time
+
+RDK = Robolink()
+robot = RDK.Item('Staubli TX2-90L')
+robot_frame = RDK.Item("Staubli TX2-90L Base")
 
 f_mag = RDK.Item("F_Magazinplatte")
 f_tower = RDK.Item("F_Trumplatte")
